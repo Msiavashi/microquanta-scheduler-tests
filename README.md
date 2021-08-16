@@ -21,7 +21,7 @@ Command:
 
 
 
-[Result](./test2.txt)
+[Result](./test1.txt)
 
 
 ### 1.2
@@ -30,5 +30,10 @@ Command:
         - period: 40000 ns
 
 
+[Result](./test2.txt)
 
 ## 2. CFS results
+
+Default ubuntu config.
+
+[Result](./test3.txt)
