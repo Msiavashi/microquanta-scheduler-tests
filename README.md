@@ -169,3 +169,15 @@ RPS: 9000
 [orange: period: 40000ns & runtime: 20000ns](./stress/7)
 
 ![stress-2](./stress/out4.png)
+
+### 2.3.5
+
+RPS: 10000
+
+> Almost a the max throughput of my VM
+
+[blue: period: 50000ns & runtime: 40000ns](./stress/10)
+
+[orange: period: 40000ns & runtime: 20000ns](./stress/9)
+
+![stress-2](./stress/out5.png)
