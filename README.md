@@ -112,9 +112,8 @@ Default config.
 Blue: MQ with period: 40us & runtime: 20us
 Green: CFS
 Orange: MQ with period: 50us & runtime: 40us
-Request per second: 400000
 
-> Not all 400000 RPS are responded.
+> With having the stress running the throughput of my VM is ~10000 RPS
 
 ![Result](./http-echo/stress.png)
 
@@ -127,19 +126,22 @@ Http server assigned to cores 0 and 1.
 
 `wrk2` is assigned to cores 2 and 3.
 
-### 2.3.1 MQ Period=50000ns & Runtime=40000ns
+### 2.3.1
+RPS: 400000
+> Not all requests are resolved
 
-[Result](./stress/p5p4)
+[blue: period: 50000ns & runtime: 40000ns](./stress/2)
+[orange: period: 40000ns & runtime: 20000ns](./stress/1)
 
-### 2.3.2 MQ Period=40000ns & Runtime=20000ns
+![stress](./stress/out1.png)
 
+### 2.3.2
 
-[Result](./stress/p4p2)
+RPS: 5000
 
+> This RPS is almost half the throughput of my VM with its current config
 
-### 2.3.3 Comparison
+[blue: period: 50000ns & runtime: 40000ns](./stress/4)
+[orange: period: 40000ns & runtime: 20000ns](./stress/3)
 
-blue: period: 50000ns & runtime: 40000ns
-orange: period: 40000ns & runtime: 20000ns
-
-![stress](./stress/stress.png)
+![stress-2](./stress/out2.png)
