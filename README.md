@@ -159,3 +159,13 @@ RPS: 1000
 [orange: period: 40000ns & runtime: 20000ns](./stress/5)
 
 ![stress-2](./stress/out3.png)
+
+### 2.3.4
+
+RPS: 9000
+
+[blue: period: 50000ns & runtime: 40000ns](./stress/8)
+
+[orange: period: 40000ns & runtime: 20000ns](./stress/7)
+
+![stress-2](./stress/out4.png)
