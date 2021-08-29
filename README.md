@@ -145,3 +145,14 @@ RPS: 5000
 [orange: period: 40000ns & runtime: 20000ns](./stress/3)
 
 ![stress-2](./stress/out2.png)
+
+### 2.3.3
+
+RPS: 1000
+
+> There is a spike in period: 50000 & runtime: 40000 on 99.9th percentile latency
+
+[blue: period: 50000ns & runtime: 40000ns](./stress/6)
+[orange: period: 40000ns & runtime: 20000ns](./stress/5)
+
+![stress-2](./stress/out3.png)
