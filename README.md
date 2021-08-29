@@ -112,4 +112,34 @@ Default config.
 Blue: MQ with period: 40us & runtime: 20us
 Green: CFS
 Orange: MQ with period: 50us & runtime: 40us
+Request per second: 400000
+
+> Not all 400000 RPS are responded.
+
 ![Result](./http-echo/stress.png)
+
+
+## 2.3 Collocation with affinity
+
+Http server assigned to cores 0 and 1.
+
+`Stress-ng` is asssigned to core 0.
+
+`wrk2` is assigned to cores 2 and 3.
+
+### 2.3.1 MQ Period=50000ns & Runtime=40000ns
+
+[Result](./stress/p5p4)
+
+### 2.3.2 MQ Period=40000ns & Runtime=20000ns
+
+
+[Result](./stress/p4p2)
+
+
+### 2.3.3 Comparison
+
+blue: period: 50000ns & runtime: 40000ns
+orange: period: 40000ns & runtime: 20000ns
+
+![stress](./stress/stress.png)
